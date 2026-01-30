@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMI - Método Metabolismo Inteligente</title>
+    <style>
+        :root { --primary: #27ae60; --secondary: #e67e22; --dark: #1a1a1a; --danger: #e74c3c; --blue: #2980b9; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; margin: 0; line-height: 1.6; color: #333; background: #fff; }
+        
+        header { background: #fff; padding: 10px; text-align: center; border-bottom: 1px solid #eee; }
+        .urgency-bar { background: var(--danger); color: white; text-align: center; padding: 8px; font-size: 0.85em; font-weight: bold; }
+
+        .container { max-width: 500px; margin: auto; padding: 20px; }
+        
+        h1 { font-size: 1.8em; color: var(--dark); line-height: 1.2; text-align: center; margin-bottom: 15px; }
+        .headline-sub { text-align: center; color: #666; font-size: 1.1em; margin-bottom: 25px; border-bottom: 2px solid #f1f1f1; padding-bottom: 15px; }
+
+        .vagas-counter { background: #fff5f5; border: 1px dashed var(--danger); color: var(--danger); text-align: center; padding: 10px; border-radius: 10px; margin-bottom: 20px; font-weight: bold; font-size: 0.9em; }
+
+        .before-after-container { text-align: center; margin-bottom: 30px; }
+        .before-after-img { width: 100%; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+        .img-caption { font-size: 0.85em; color: #888; margin-top: 8px; font-style: italic; }
+
+        .delivery-box { background: #f0f7ff; border-left: 4px solid var(--blue); padding: 15px; margin-bottom: 25px; border-radius: 0 10px 10px 0; font-size: 0.9em; }
+        .delivery-box b { color: var(--blue); }
+
+        .check-list { list-style: none; padding: 0; margin: 25px 0; }
+        .check-list li { display: flex; align-items: center; margin-bottom: 12px; font-weight: 500; font-size: 1.05em; }
+        .check-list li::before { content: '✅'; margin-right: 12px; }
+
+        .social-proof-container { text-align: center; margin: 35px 0; padding: 10px; background: #f0fdf4; border-radius: 15px; }
+        .social-proof-title { font-size: 1em; font-weight: bold; color: #166534; margin-bottom: 12px; display: block; }
+        .social-proof-img { width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); border: 2px solid #fff; }
+
+        .bonus-box { background: #fffdec; border: 2px solid #f1c40f; padding: 20px; border-radius: 15px; margin-bottom: 30px; position: relative; }
+        .bonus-tag { position: absolute; top: -12px; right: 10px; background: #f1c40f; color: #000; font-size: 0.7em; font-weight: bold; padding: 2px 10px; border-radius: 5px; }
+        .bonus-box h3 { margin-top: 0; color: #d35400; font-size: 1.1em; text-align: center; text-transform: uppercase; }
+        .bonus-item { font-size: 0.95em; margin-bottom: 12px; display: block; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 5px; }
+
+        .price-card { text-align: center; padding: 30px 20px; border: 3px solid var(--primary); border-radius: 25px; background: #fff; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        .old-price { text-decoration: line-through; color: #999; font-size: 1.1em; }
+        .new-price { font-size: 4em; color: var(--dark); font-weight: 900; margin: 5px 0; }
+        .cta-button { display: block; background: var(--primary); color: white; padding: 25px; text-decoration: none; font-size: 1.4em; border-radius: 15px; font-weight: bold; box-shadow: 0 10px 20px rgba(39, 174, 96, 0.3); animation: pulse 1.5s infinite; margin-top: 15px; }
+
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+
+        .guarantee-box { display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 20px; font-size: 0.85em; color: #444; }
+        footer { text-align: center; padding: 40px; font-size: 0.75em; color: #888; background: #f9f9f9; }
+    </style>
+</head>
+<body>
+
+    <div class="urgency-bar">OFERTA POR TEMPO LIMITADO: APENAS R$ 49,90 HOJE</div>
+
+    <div class="container">
+        <div class="vagas-counter">🔥 Restam apenas 7 vagas com este valor promocional!</div>
+        
+        <h1>Volte a usar suas roupas favoritas com o <span style="color:var(--primary)">Protocolo MMI</span></h1>
+        <p class="headline-sub">O guia prático para desinchar e destravar o metabolismo sem gastar fortunas no mercado.</p>
+
+        <div class="before-after-container">
+            <img src="https://i.imgur.com/rBc3Wbr.png" alt="Resultado MMI" class="before-after-img">
+            <p class="img-caption">Resultados reais após 21 dias do Método MMI</p>
+        </div>
+
+        <div class="delivery-box">
+            <b>🚀 ACESSO IMEDIATO:</b><br>
+            Assim que a inscrição for confirmada, você recebe o link no seu e-mail para baixar tudo e começar agora mesmo.
+        </div>
+
+        <ul class="check-list">
+            <li>Cardápio Econômico (Itens de mercado)</li>
+            <li>Guia "Seca Abdômen" Noturno</li>
+            <li>Acesso Vitalício (Sem mensalidades)</li>
+            <li>Suporte para Dúvidas via Portal</li>
+        </ul>
+
+        <div class="social-proof-container">
+            <span class="social-proof-title">💬 Mulheres que já começaram:</span>
+            <img src="https://i.imgur.com/89nuAl6.png" alt="Depoimentos MMI" class="social-proof-img">
+        </div>
+
+        <div class="bonus-box">
+            <div class="bonus-tag">EXCLUSIVO</div>
+            <h3>🎁 VOCÊ GANHA 3 BÔNUS HOJE:</h3>
+            <span class="bonus-item">✅ <b>Doces Fit:</b> Para saciar a vontade de açúcar</span>
+            <span class="bonus-item">✅ <b>Sucos Detox 24h:</b> Desinche em 1 dia</span>
+            <span class="bonus-item">✅ <b>Lista de Compras:</b> Economize no mercado</span>
+        </div>
+
+        <div class="price-card">
+            <span class="old-price">De R$ 147,00 por</span>
+            <div class="new-price">R$ 49,90</div>
+            <p style="font-weight: bold; color: var(--primary);">PAGAMENTO ÚNICO E SEGURO</p>
+            
+            <a href="https://pay.hotmart.com/B98977801P?checkoutMode=10" class="cta-button">COMPRAR AGORA</a>
+            
+            <div class="guarantee-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Shield-7-days-guarantee.svg" width="30" alt="Garantia">
+                <p><b>Risco Zero:</b> 7 dias de garantia ou seu dinheiro de volta.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Acesso Seguro e Processado por Hotmart.<br>
+        &copy; 2026 MMI - Método Metabolismo Inteligente</p>
+    </footer>
+
+</body>
+</html>
