@@ -16,6 +16,26 @@
         h1 { font-size: 1.7em; color: var(--dark); line-height: 1.2; text-align: center; margin-bottom: 15px; }
         .headline-sub { text-align: center; color: #666; font-size: 1.1em; margin-bottom: 25px; }
 
+        /* Estilo do Container do Vídeo */
+        .vsl-container { 
+            position: relative; 
+            padding-bottom: 177.77%; /* Proporção 9:16 (Shorts/Vertical) */
+            height: 0; 
+            overflow: hidden; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+            margin-bottom: 20px;
+            background: #000;
+        }
+        .vsl-container iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            border: 0; 
+        }
+
         .before-after-container { text-align: center; margin-bottom: 30px; }
         .before-after-img { width: 100%; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
         .img-caption { font-size: 0.85em; color: #888; margin-top: 8px; font-style: italic; }
@@ -27,7 +47,6 @@
         .check-list li { display: flex; align-items: center; margin-bottom: 12px; font-weight: 500; font-size: 1.05em; }
         .check-list li::before { content: '✅'; margin-right: 12px; }
 
-        /* Ajuste da Prova Social do Grupo */
         .social-proof-container { text-align: center; margin: 35px 0; padding: 10px; background: #f0fdf4; border-radius: 15px; }
         .social-proof-title { font-size: 1em; font-weight: bold; color: #166534; margin-bottom: 12px; display: block; }
         .social-proof-img { 
@@ -53,7 +72,7 @@
         .price-card { text-align: center; padding: 30px 20px; border: 2px solid #eee; border-radius: 20px; background: #fafafa; }
         .old-price { text-decoration: line-through; color: #999; font-size: 1em; }
         .new-price { font-size: 3.5em; color: var(--dark); font-weight: 900; margin: 5px 0; }
-        .cta-button { display: block; background: var(--secondary); color: white; padding: 22px; text-decoration: none; font-size: 1.3em; border-radius: 12px; font-weight: bold; box-shadow: 0 10px 20px rgba(230, 126, 34, 0.4); animation: pulse 2s infinite; margin-top: 15px; }
+        .cta-button { display: block; background: var(--secondary); color: white; padding: 22px; text-align: center; text-decoration: none; font-size: 1.3em; border-radius: 12px; font-weight: bold; box-shadow: 0 10px 20px rgba(230, 126, 34, 0.4); animation: pulse 2s infinite; margin-top: 15px; }
 
         @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.03); } 100% { transform: scale(1); } }
 
@@ -72,7 +91,14 @@
 
     <div class="container">
         <h1>Recupere suas roupas favoritas com o <span style="color:var(--primary)">Protocolo MMI</span></h1>
-        <p class="headline-sub">O método de destrave metabólico para quem precisa de resultados rápidos gastando pouco.</p>
+        <p class="headline-sub">Assista ao vídeo abaixo para entender como destravar seu metabolismo gastando pouco.</p>
+
+        <div class="vsl-container">
+            <iframe src="https://www.youtube.com/embed/9Y0xcXs6-W0?rel=0&modestbranding=1&autoplay=0" title="Protocolo MMI VSL" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <a href="https://pay.hotmart.com/B98977801P?checkoutMode=10" class="cta-button">QUERO MEU ACESSO AGORA</a>
+        <p style="text-align:center; font-size: 0.8em; color: #27ae60; font-weight: bold; margin-bottom: 30px;">✓ ACESSO LIBERADO NO E-MAIL APÓS A COMPRA</p>
 
         <div class="delivery-box">
             <b>🏠 ÁREA DE MEMBROS EXCLUSIVA:</b><br>
@@ -99,34 +125,4 @@
 
         <div class="bonus-box">
             <div class="bonus-tag">SÓ HOJE</div>
-            <h3>🎁 VOCÊ TAMBÉM RECEBE GRÁTIS:</h3>
-            <span class="bonus-item"><b>Bônus 1:</b> Doces que não engordam (Aprenda a saciar a vontade de doce sem travar o metabolismo)</span>
-            <span class="bonus-item"><b>Bônus 2:</b> Guia de Sucos Detox 24h (O segredo para desinflamar e desinchar o abdômen em 1 dia)</span>
-            <span class="bonus-item"><b>Bônus 3:</b> Lista de Compras Econômica (O que comprar para emagrecer gastando menos de R$ 15 por dia)</span>
-        </div>
-
-        <div class="price-card">
-            <span class="old-price">De R$ 147,00 por apenas</span>
-            <div class="new-price">R$ 49,90</div>
-            <p style="margin-top: 0; font-weight: bold; color: var(--primary);">PAGAMENTO ÚNICO - SEM MENSALIDADES</p>
-            
-            <a href="https://pay.hotmart.com/B98977801P?checkoutMode=10" class="cta-button">QUERO MEU ACESSO AGORA</a>
-            
-            <div class="guarantee-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Shield-7-days-guarantee.svg" width="30" alt="Garantia">
-                <p>7 Dias de Garantia Incondicional ou seu dinheiro de volta.</p>
-            </div>
-
-            <div class="secure-footer">
-                <img src="https://i.imgur.com/7S8M6Xf.png" width="60" alt="Seguro">
-                <span style="font-size: 0.7em;">Ambiente de pagamento 100% criptografado e seguro.</span>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2026 MMI - Método Metabolismo Inteligente<br>Todos os direitos reservados.</p>
-    </footer>
-
-</body>
-</html>
+            <h3>🎁 VOCÊ TAMBÉM RECEBE GRÁTIS
